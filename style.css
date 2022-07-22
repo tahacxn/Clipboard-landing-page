@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+}
+
+header,
+main {
+    margin: 0 1rem;
+}
+
+header {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 1.5;
+    color: hsl(201, 11%, 66%);
+}
+
+h1,
+h2 {
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.container {
+    margin: 30px auto;
+    max-width: 100%;
+    width: 1200px;
+}
+
+.container-small {
+    width: 500px;
+}
+
+section {
+    padding: 30px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+.flex-right div {
+    padding: 0 3rem;
+    max-width: 450px;
+}
+
+.flex-right div h3 {
+    padding-bottom: 8px;
+    margin-top: 2rem;
+}
+
+.info {
+    margin-bottom: 2rem;
+}
+
+.flex>* {
+    flex: 1;
+    padding: 10px;
+}
+
+.supercharge div {
+    max-width: 370px;
+    height: 170px;
+}
+
+.supercharge div h3,
+img {
+    padding-bottom: 10px;
+}
+
+.btn {
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    margin: 15px 5px;
+    font-size: 16px;
+    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .8);
+}
+
+.buttons {
+    margin: 2rem 0 3rem 0;
+}
+
+.btn-primary {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.btn-primary:hover {
+    background-color: hsla(171, 66%, 44%, .5);
+}
+
+.btn-secondary {
+    background-color: hsl(233, 100%, 69%);
+}
+
+.btn-secondary:hover {
+    background-color: hsla(233, 100%, 69%, .5);
+}
+
+footer {
+    background-color: hsla(204, 8%, 86%, 0.2);
+}
+
+footer img {
+    width: 60px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer ul a {
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+}
+
+footer .links {
+    flex: 2.5;
+}
+
+footer .links li {
+    padding: 10px;
+    margin-right: 40px;
+}
+
+footer .social li {
+    margin-right: 10px;
+}
+
+footer .social a {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.links a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.social i:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+@media only screen and (max-width:767px) {
+    header {
+        background-image: url(images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-right {
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 2rem;
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    .btn {
+        padding: 15px 80px;
+    }
+
+    .info {
+        margin-bottom: 4rem;
+    }
+
+    .supercharge div h3,
+    img {
+        padding-bottom: 30px;
+    }
+
+    footer div {
+        padding-top: 20px;
+    }
+
+    footer .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .links li {
+        padding: 10px;
+        margin-right: 0;
+    }
+
+}
